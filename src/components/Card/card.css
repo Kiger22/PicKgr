@@ -1,0 +1,26 @@
+.card {
+  transition: transform 0.3s ease;
+  border-radius: var(--kg-radius-md);
+  box-shadow: 0 2px 8px var(--kg-color-roseIII) (0, 0, 0, 0.1);
+ 
+}
+
+.card:hover {
+  filter: sepia(40%);
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--kg-radius-md);
+
+}
+
+.card-body {
+  padding: 15px;
+  border-radius: var(--kg-radius-md);
+}
+
+
+

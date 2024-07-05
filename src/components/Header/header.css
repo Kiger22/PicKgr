@@ -48,7 +48,7 @@
   gap: 20px;
 }
 
-.header-burguer{
+.menu-burg{
   display: none;
 }
 
@@ -59,7 +59,7 @@
   
   }
  
-  .header-burguer{
+  .menu-burg{
     display:block;
   }
   
@@ -75,7 +75,7 @@
     display: none;
   
   }
-  .header-burguer{
+  .menu-burg{
     display:block;
   }
  

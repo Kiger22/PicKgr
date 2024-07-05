@@ -1,8 +1,8 @@
 import { OnLogin } from "../../../actions/OnLogin";
 import { OnRegister } from "../../../actions/OnRegister";
+import { closeMenuAside, isMenuOpen, openMenuAside } from "../../../actions/OpenMenuAside";
 import { buttonText, placeholder } from "../../data/header";
 import { createButton } from "../Button/button";
-import { openMenuAside } from "../Formularios/MenuAsside/menuAside";
 import { createSearchInput } from "../Search/search";
 import "./header.css"
 
@@ -57,23 +57,30 @@ export const createHeader = (logoSrc, menuItems, onSearch, menuItemsII) => {
   header.appendChild(loginSection);
 
   createButton(loginSection, "login-Btt", "Login", OnLogin);
+  //createButton(loginSection, "register-Btt", " ➕", OnRegister);
 
   const toggleimg = document.createElement("img");
   toggleimg.src = "./assets/toggle.svg";
+  toggleimg.className = " toggle-img";
   loginSection.appendChild(toggleimg);
-
-  // Menu Hambuerguesa
-  const menuBurger = document.createElement("div");
-  menuBurger.className = "header-burguer";
-  loginSection.appendChild(menuBurger);
 
   const menuBurg = document.createElement("img");
   menuBurg.src = "./assets/menu.svg";
-  menuBurg.addEventListener("click", openMenuAside);
-  menuBurger.appendChild(menuBurg);
+  menuBurg.className = "menu-burg";
+  loginSection.appendChild(menuBurg);
 
-  //createButton(loginSection, "register-Btt", " ➕", OnRegister);
+  menuBurg.addEventListener("click", () => {
 
+    if (isMenuOpen) {
+      closeMenuAside();
+    }
+    else {
+      openMenuAside();
+    }
+
+  });
+
+  //menuBurg.addEventListener("click", openMenuAside);
 
 };
 

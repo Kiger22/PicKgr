@@ -1,4 +1,3 @@
-import { OnLogin } from './actions/OnLogin';
 import { OnSearch, OnSearchMore } from './actions/OnSearch';
 import { createButton } from './src/components/Button/button';
 import { createCard } from './src/components/Card/card';
@@ -29,15 +28,11 @@ export const callApi = (keyword, page) => {
       }
       else {
         res.results.forEach(result => {
-
-          //const card = createCard(appDiv, results.urls.regular);
-          createCard(appDiv, result.urls.full);
-          //card.querySelector("img").addEventListener("click", () => { openModal(image.urls.full); });
-
+          createCard(appDiv, result.urls.small);
         });
       }
-
     })
+
     .catch((error) => {
       alert("Error al obtener los datos de la API");
       console.error("Error:", error);
@@ -71,9 +66,6 @@ export const callRandomApi = (page) => {
 }
 
 callRandomApi(20);
-
-//createloginSection();
-//createAsideMenu(menuAsideItems);
 
 createButton(main, "moreButton", "MORE   ⏬", OnSearchMore);
 

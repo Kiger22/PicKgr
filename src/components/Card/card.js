@@ -1,3 +1,5 @@
+import { openModal } from "../../../actions/openModal";
+
 import("./card.css");
 
 export const createCard = (node, imgSrc, title, description) => {
@@ -8,6 +10,8 @@ export const createCard = (node, imgSrc, title, description) => {
   const img = document.createElement("img");
   img.src = imgSrc;
   card.appendChild(img);
+
+  //! img.addEventListener("click", openModal(imgSrc));
 
   if (title || description) {
     const cardBody = document.createElement("div");

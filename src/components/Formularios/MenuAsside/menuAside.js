@@ -33,8 +33,3 @@ export const createAsideMenu = (menuItems) => {
 
   });
 }
-
-export const openMenuAside = () => {
-  const aside = document.getElementsByClassName("menu-aside");
-  aside.classList.add("show");
-}

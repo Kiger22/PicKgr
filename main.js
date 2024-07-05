@@ -75,7 +75,7 @@ export const callRandomApi = (page) => {
 
 callRandomApi(20);
 
-createloginSection();
+//createloginSection();
 createAsideMenu(menuAsideItems);
 
 createButton(main, "moreButton", "MORE   ⏬", OnSearchMore);

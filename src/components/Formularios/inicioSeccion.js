@@ -61,29 +61,24 @@ export const createloginSection = () => {
   loginForm.appendChild(submitBtn);
 
   // Cerrar el modal al hacer clic en el botón de cierre
-  closeBtn.onclick = function () {
-    modal.style.visibility = "hidden";
-    callRandomApi();
+  closeBtn.onclick = () => {
+    //modal.style.visibility = "hidden";
+    modal.remove();
+    //callRandomApi(20);
   }
 
-  // Cerrar el modal al hacer clic fuera del contenido del modal
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.visibility = "hidden";
-      callRandomApi();
-    }
-  }
+  /*   // Cerrar el modal al hacer clic fuera del contenido del modal
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        //modal.style.visibility = "hidden";
+        modal.remove();
+        callRandomApi(20);
+      }
+    } */
 
-  /* // Manejar el envío del formulario
-  loginForm.onsubmit = function (event) {
-    event.preventDefault();
-    // Aquí puedes añadir la lógica para manejar el inicio de sesión
-    alert("Inicio de sesión exitoso");
-    modal.style.display = "none";
-  } */
 }
 
-export const openLoginSection = () => {
+/* export const openLoginSection = () => {
   //const modal = document.getElementsByClassName("modal");
   modal.style.visibility = "visible";
-}
+} */

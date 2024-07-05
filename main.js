@@ -3,11 +3,9 @@ import { OnSearch, OnSearchMore } from './actions/OnSearch';
 import { createButton } from './src/components/Button/button';
 import { createCard } from './src/components/Card/card';
 import { createFooter } from './src/components/Footer/footer';
-import { createAsideMenu } from './src/components/Formularios/MenuAsside/menuAside';
-import { createloginSection } from './src/components/Formularios/inicioSeccion';
 import { createHeader } from './src/components/Header/header';
 import { footerLogo, menuFooter, socialLinks } from './src/data/footer';
-import { heaterLogo, menuAsideItems, menuItemsHeaderI, menuItemsHeaderII } from './src/data/header';
+import { heaterLogo, menuItemsHeaderI, menuItemsHeaderII } from './src/data/header';
 import './style.css'
 
 export const appDiv = document.querySelector("#app");
@@ -72,11 +70,10 @@ export const callRandomApi = (page) => {
     })
 }
 
-
 callRandomApi(20);
 
 //createloginSection();
-createAsideMenu(menuAsideItems);
+//createAsideMenu(menuAsideItems);
 
 createButton(main, "moreButton", "MORE   ⏬", OnSearchMore);
 

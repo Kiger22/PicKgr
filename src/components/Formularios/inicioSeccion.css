@@ -1,5 +1,5 @@
 .modal {
-  visibility: hidden;
+  visibility: visible;
   display: flex;
   position: fixed;
   z-index: 1;

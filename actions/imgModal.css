@@ -4,11 +4,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--kg-bg-dark);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 100;
 }
 
 .modal-img {

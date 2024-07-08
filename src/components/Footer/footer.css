@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: var(--kg-bg-secondary);
-  color: var(--kg-text-terciary);
+  color: var(--kg-text-primary);
   text-align: center;
   padding: 5px 0;
   margin-top: 40px;

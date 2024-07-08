@@ -8,6 +8,7 @@
 .card:hover {
   filter: sepia(40%);
   transform: scale(1.05);
+  z-index: 3  ;
 }
 
 .card img {

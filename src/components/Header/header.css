@@ -7,9 +7,21 @@
   color: var(--kg-text-dark);
   text-align: center;
   width: 100%;
+  height: 100px;
   position: fixed;
-  z-index: 4;
+  top: 0;
+  z-index: 1;
 }
+
+/* .dark{
+  background-color: var(--kg-bg-terciary);
+  color: var(--kg-text-primary);
+} */
+
+/* .active {
+  background-color: var(--kg-bg-terciary);
+  color: var(--kg-text-primary);
+} */
 
 .header-logo img {
   width: 5rem;
@@ -52,6 +64,10 @@
 
 .menu-burg{
   display: none;
+}
+
+.toggle-img{
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

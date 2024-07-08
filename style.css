@@ -81,9 +81,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--kg-bg-primary);
-  color: var(--kg-text-dark);
-
+  background-color: var(--kg-text-primary);
+  color: var(--kg-bg-terciary);
  }
 
 header {
@@ -95,7 +94,7 @@ footer {
 }
 
 main {
-  flex: 1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,15 +103,15 @@ main {
   margin-bottom: 120px;
 }
 
-.dark {
-  background-color: var(--kg-text-primary);
-  color: var(--kg-bg-primary);
+.dark{
+  background-color: var(--kg-bg-terciary);
+  color: var(--kg-text-primary);
 }
 
-.active {
-  background-color: var(--kg-text-primary);
-  color: var(--kg-bg-primary);
-}
+/* .active {
+  background-color: var(--kg-bg-terciary);
+  color: var(--kg-text-primary);
+} */
 
 #app {
   display: flex;
@@ -125,14 +124,11 @@ main {
   max-width:1600px ;
   scroll-behavior: smooth;
   margin:auto;
-  
   text-align: center;
 }
 
 #app .card {
   width: 20%;
-  height: 100%;
-  object-fit: cover;
  }
 
  .moreButton {

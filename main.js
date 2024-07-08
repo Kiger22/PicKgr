@@ -1,4 +1,5 @@
 import { OnSearch, OnSearchMore } from './actions/OnSearch';
+import { toggletheme } from './actions/toggleTheme';
 import { createButton } from './src/components/Button/button';
 import { createCard } from './src/components/Card/card';
 import { createFooter } from './src/components/Footer/footer';
@@ -52,9 +53,9 @@ export const callRandomApi = (page) => {
       console.log(res);
       res.forEach(result => {
 
-        //const card = createCard(appDiv, results.urls.regular);
+        //const card = createCard(appDiv, result.urls.regular);
         createCard(appDiv, result.urls.full);
-        //card.querySelector("img").addEventListener("click", () => { openModal(image.urls.full); });
+        //card.querySelector("img").addEventListener("click", () => { openModal(result.urls.full); });
 
       });
     })
@@ -71,6 +72,15 @@ createButton(main, "moreButton", "MORE   ⏬", OnSearchMore);
 
 createFooter(footerLogo, menuFooter, socialLinks);
 
+
+const toggleimg = document.querySelector(".toggle-img");
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+
+toggleimg.addEventListener("click", () => toggletheme(body));
+toggleimg.addEventListener("click", () => toggletheme(header));
+toggleimg.addEventListener("click", () => toggletheme(footer));
 
 
 

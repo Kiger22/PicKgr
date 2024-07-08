@@ -28,7 +28,7 @@ export const callApi = (keyword, page) => {
       }
       else {
         res.results.forEach(result => {
-          createCard(appDiv, result.urls.small);
+          createCard(appDiv, result.urls.small,);
         });
       }
     })

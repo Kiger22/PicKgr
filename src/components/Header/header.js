@@ -61,8 +61,9 @@ export const createHeader = (logoSrc, menuItems, onSearch, menuItemsII) => {
 
   const toggleimg = document.createElement("img");
   toggleimg.src = "./assets/toggle.svg";
-  toggleimg.className = " toggle-img";
+  toggleimg.className = "toggle-img";
   loginSection.appendChild(toggleimg);
+
 
   const menuBurg = document.createElement("img");
   menuBurg.src = "./assets/menu.svg";
@@ -79,8 +80,6 @@ export const createHeader = (logoSrc, menuItems, onSearch, menuItemsII) => {
     }
 
   });
-
-  //menuBurg.addEventListener("click", openMenuAside);
 
 };
 

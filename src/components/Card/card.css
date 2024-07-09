@@ -13,8 +13,9 @@
 }
 
 .card img {
+  height: 400px;
   width: 100%;
-  height: auto;
+  object-fit: cover;
   border-radius: var(--kg-radius-md);
   display: block;
 }

@@ -9,7 +9,7 @@
   /* Colors */
   --kg-color-white: #fdfcfc;
   --kg-color-gray: #9a898e;
-  --kg-color-dark: #0f0d0d;
+  --kg-color-dark: #3d3434;
   --kg-color-roseI: #fff0f5;
   --kg-color-roseII: #e4d3d8  ;
   --kg-color-roseIII: #ab5474;
@@ -104,7 +104,7 @@ main {
 }
 
 .dark{
-  background-color: var(--kg-bg-terciary);
+  background-color: var(--kg-bg-dark);
   color: var(--kg-text-primary);
 }
 
@@ -132,7 +132,7 @@ main {
  }
 
  .moreButton {
-  margin: 20px auto;
+  margin: 40px auto;
  }
 
  @media (max-width: 1000px) {

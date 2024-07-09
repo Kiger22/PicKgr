@@ -13,33 +13,23 @@
   z-index: 1;
 }
 
-/* .dark{
-  background-color: var(--kg-bg-terciary);
-  color: var(--kg-text-primary);
-} */
-
-/* .active {
-  background-color: var(--kg-bg-terciary);
-  color: var(--kg-text-primary);
-} */
-
 .header-logo img {
-  width: 5rem;
-  margin: 5px;
+  width: 12rem;
+  margin: 15px;
   cursor: pointer;
 }
 
 .header-menu, 
 .header-menu-login{
   display: flex;
-  gap: 20px;
+  gap: 40px;
   font-size: var(--kg-font-size-text);
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .header-menu a,
 .header-menu-login a {
-  color: var(--kg-text-dark);
+  color: var(--kg-text-terciary);
   text-decoration: none;
   cursor: pointer;
 }
@@ -59,7 +49,7 @@
   display: flex;
   padding: 0 ;
   gap: 20px;
-  margin: 0 5px;
+  margin: 0 30px;
 }
 
 .menu-burg{

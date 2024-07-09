@@ -2,7 +2,7 @@ import { openModal } from "../../../actions/openModal";
 
 import("./card.css");
 
-export const createCard = (node, imgSrc, title, description) => {
+export const createCard = (node, imgSrc, imgFull, title, description) => {
   const card = document.createElement("div");
   card.className = "card";
   node.appendChild(card);
@@ -11,7 +11,7 @@ export const createCard = (node, imgSrc, title, description) => {
   img.src = imgSrc;
   card.appendChild(img);
 
-  img.addEventListener("click", () => openModal(imgSrc));
+  img.addEventListener("click", () => openModal(imgFull));
 
   if (title || description) {
     const cardBody = document.createElement("div");

@@ -1,10 +1,10 @@
 import { appDiv, callApi, callRandomApi } from "../main";
 
 export const OnSearch = () => {
-  //alert(" Buscando");
 
   const searchInput = document.querySelector(".search-input");
   appDiv.innerHTML = "";
+
   /* if (searchInput.value === "") {
     alert("Por favor ingrese una palabra para poder buscarla !!!");
   }

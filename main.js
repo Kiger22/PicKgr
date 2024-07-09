@@ -18,8 +18,6 @@ export const callApi = (keyword, page) => {
   const imgPerPag = 20;
   const API_URL = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=${imgPerPag}`;
 
-  appDiv.innerHTML = "";
-
   fetch(API_URL)
     .then((res) => res.json())
     .then((res) => {
@@ -29,7 +27,7 @@ export const callApi = (keyword, page) => {
       }
       else {
         res.results.forEach(result => {
-          createCard(appDiv, result.urls.small,);
+          createCard(appDiv, result.urls.small, result.urls.raw);
         });
       }
     })
@@ -45,17 +43,12 @@ export const callRandomApi = (page) => {
   const accessKey = 'UdGLeHvGPYod1K-LPYP0HevqnNknec_b1g6Ov_5VbF4';
   const API_URL = `https://api.unsplash.com/photos/random?count=${page}&client_id=${accessKey}&per_page=20`;
 
-  appDiv.innerHTML = "";
-
   fetch(API_URL)
     .then((res) => res.json())
     .then((res) => {
       console.log(res);
       res.forEach(result => {
-
-        //const card = createCard(appDiv, result.urls.regular);
-        createCard(appDiv, result.urls.full);
-        //card.querySelector("img").addEventListener("click", () => { openModal(result.urls.full); });
+        createCard(appDiv, result.urls.small, result.urls.raw);
 
       });
     })
@@ -68,7 +61,7 @@ export const callRandomApi = (page) => {
 
 callRandomApi(20);
 
-createButton(main, "moreButton", "MORE   ⏬", OnSearchMore);
+createButton(main, "moreButton", "MORE »»", OnSearchMore);
 
 createFooter(footerLogo, menuFooter, socialLinks);
 

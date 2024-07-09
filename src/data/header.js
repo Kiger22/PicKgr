@@ -1,8 +1,8 @@
-import { OnSearchMore } from "../../actions/OnSearch";
+import { OnSearch } from "../../actions/OnSearch";
 
 export const menuItemsHeaderI = [
-  { text: "HOY", href: '#', action: OnSearchMore },
-  { text: "EXPLORAR", href: '#', action: OnSearchMore },
+  { text: "HOY", href: '#', action: OnSearch },
+  { text: "EXPLORAR", href: '#', action: OnSearch },
 ];
 
 export const menuItemsHeaderII = [
@@ -12,7 +12,7 @@ export const menuItemsHeaderII = [
 
 export const menuAsideItems = [...menuItemsHeaderI, , ...menuItemsHeaderII];
 
-export const heaterLogo = "./assets/LogoSolo.png"
+export const heaterLogo = "./assets/Logo.png"
 
-export const placeholder = "Encuentra tu imagen"
+export const placeholder = "Que quieres buscar?"
 export const buttonText = "Buscar"

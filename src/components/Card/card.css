@@ -5,6 +5,9 @@
   cursor: pointer;
   display: flex;
   justify-content: center ;
+  height: fit-content;
+  overflow: hidden;
+  margin: 2rem 0;
 }
 
 .card:hover {
@@ -13,16 +16,15 @@
 }
 
 .card img {
-  height: 400px;
   width: 100%;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: var(--kg-radius-md);
-  display: block;
+
 }
 
 .card-body {
-  padding: 15px;
-  border-radius: var(--kg-radius-md);
+    border-radius: var(--kg-radius-md);
+ 
 }
 
 

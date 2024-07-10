@@ -108,46 +108,36 @@ main {
   color: var(--kg-text-primary);
 }
 
-/* .active {
-  background-color: var(--kg-bg-terciary);
-  color: var(--kg-text-primary);
-} */
-
 #app {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  gap: 25px;
+  gap: 2rem;
+  column-count: 4;
   min-width: 400px;
-  max-width:1600px ;
+  max-width:80% ;
   scroll-behavior: smooth;
   margin:auto;
   text-align: center;
 }
 
-#app .card {
-  width: 20%;
- }
-
  .moreButton {
   margin: 40px auto;
  }
 
- @media (max-width: 1000px) {
-  #app .card {
-    width: 30%;
+ @media (max-width: 1200px) {
+  #app {
+    column-count: 3;
   }
  }
 
- @media (max-width: 800px) {
-  #app .card {
-    width: 40%;
+ @media (max-width: 900px) {
+  #app {
+    column-count: 2;
   }
 }
-@media (max-width: 500px) {
-  #app .card {
-    width: 80%;
+@media (max-width: 600px) {
+  #app {
+    column-count: 1;
   }
 }

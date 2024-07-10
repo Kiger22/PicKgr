@@ -14,6 +14,7 @@ export const createCard = (node, imgSrc, imgFull, title, description) => {
   img.addEventListener("click", () => openModal(imgFull));
 
   if (title || description) {
+
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
     card.appendChild(cardBody);
